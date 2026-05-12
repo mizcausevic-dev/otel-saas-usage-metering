@@ -1,0 +1,37 @@
+{
+  "name": "otel-saas-usage-metering",
+  "version": "1.0.0",
+  "description": "OpenTelemetry-style SaaS usage metering for tenant feature activity, billable aggregation, and product analytics reporting.",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc --pretty false",
+    "test": "vitest run",
+    "verify": "npm run build && npm run test",
+    "render:assets": "powershell -ExecutionPolicy Bypass -File .\\scripts\\render_readme_assets.ps1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizcausevic-dev/otel-saas-usage-metering.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mizcausevic-dev/otel-saas-usage-metering/issues"
+  },
+  "homepage": "https://github.com/mizcausevic-dev/otel-saas-usage-metering#readme",
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.1",
+    "@opentelemetry/sdk-metrics": "^2.7.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.7.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}
