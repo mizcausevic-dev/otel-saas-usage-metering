@@ -40,7 +40,7 @@ aggregation, and product analytics reporting.
 ## Local Run
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\otel-saas-usage-metering"
+cd otel-saas-usage-metering
 npm install
 npm run dev
 ```
@@ -62,7 +62,7 @@ npm run dev
 ## Validation
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\otel-saas-usage-metering"
+cd otel-saas-usage-metering
 npm run verify
 powershell -ExecutionPolicy Bypass -File .\scripts\render_readme_assets.ps1
 ```
